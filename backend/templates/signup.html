@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-box">
+
+    <h2>Signup</h2>
+
+    <!-- Autofill block -->
+    <input type="text" style="display:none">
+    <input type="password" style="display:none">
+
+    <!-- Username -->
+    <input id="suser" name="random-user" placeholder="Username" autocomplete="off">
+
+    <!-- Password -->
+    <div class="pass-box">
+        <input id="spass" name="random-pass" type="password" placeholder="Password" autocomplete="new-password">
+        <span onclick="togglePassword('spass')"></span>
+    </div>
+
+    <!-- Role -->
+    <div class="roles">
+        <button type="button" class="role-btn active" onclick="setRole('member', this)">Member</button>
+        <button type="button" class="role-btn" onclick="setRole('admin', this)">Admin</button>
+    </div>
+
+    <!-- Signup -->
+    <button onclick="signup()">Proceed</button>
+    <!-- 🔥 Login Link -->
+    <p style="text-align:center; margin-top:10px;">
+        Already have an account? 
+        <a href="/login">Login</a>
+    </p>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>

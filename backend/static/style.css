@@ -1,0 +1,338 @@
+/* Background */
+.auth-body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a85f1, #b84592);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+}
+
+/* Card */
+.auth-card {
+    width: 320px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Password */
+.pass-box {
+    position: relative;
+}
+
+.pass-box span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Roles */
+.roles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.role-btn {
+    width: 48%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #6a85f1;
+    background: white;
+    cursor: pointer;
+}
+
+.role-btn.active {
+    background: #2a5298;
+    color: white;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    background: #6a85f1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4f6fe0;
+}
+
+/* Switch text */
+.switch {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* LANDING */
+.landing-body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.landing-box {
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: float 2s ease-in-out infinite;
+}
+
+.tagline {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.enter-btn {
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #2a5298;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enter-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes float {
+    0%,100% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+}
+
+/* AUTH */
+.auth-body {
+    background: #f4f6f9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+}
+
+.auth-box {
+    width: 320px;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pass-box {
+    position: relative;
+}
+
+.pass-box span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+.roles {
+    margin: 10px 0;
+}
+
+.roles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.role-btn {
+    width: 48%;
+    padding: 8px;
+    border: 1px solid #2a5298;
+    background: white;
+    cursor: pointer;
+}
+
+.role-btn.active {
+    background: #2a5298;
+    color: white;
+}
+
+/* Dashboard Layout */
+.dash-body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+.dashboard {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #2a5298;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: white;
+    color: #2a5298;
+    cursor: pointer;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    padding: 10px;
+    margin-top: 5px;
+}
+.dash-body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #2a5298;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.account-box {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Project box */
+.project-box {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Tasks */
+.task {
+    padding: 8px;
+    margin-top: 5px;
+    background: #eee;
+    border-radius: 5px;
+}

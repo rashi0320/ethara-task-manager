@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="dash-body">
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+     <div class="account-box">
+    <h3>Account</h3>
+    <p id="userRole"></p>
+    <p id="progress"></p>
+    <p id="overdue"></p>
+    </div>
+
+    
+    <div class="sidebar">
+    <h2>Dashboard</h2>
+
+    <div class="account-box">
+        <p id="userRole"></p>
+        <p id="progress"></p>
+        <p id="overdue"></p>
+    </div>
+</div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- ADD PROJECT -->
+        <div class="card">
+            <input id="projectName" placeholder="Project name">
+            <button onclick="createProject()">Add Project</button>
+        </div>
+
+        <!-- PROJECT LIST -->
+        <div id="projectsContainer"></div>
+
+    </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+<script>
+<script>
+window.onload = () => {
+
+    let role = localStorage.getItem("role");
+
+    console.log("ROLE ON DASHBOARD:", role);
+
+    document.getElementById("userRole").innerText =
+        "Role: " + (role ? role : "Not found");
+
+    loadProjects();
+};
+</script>
+
+</script>
+
+</body>
+</html>
